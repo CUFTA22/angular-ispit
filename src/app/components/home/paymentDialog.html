@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Payment modal</h1>
+<div mat-dialog-content></div>
+<div mat-dialog-actions class="justify-content-end">
+  <button mat-raised-button color="primary" (click)="onNoClick()">
+    <mat-icon>close</mat-icon>
+    Close
+  </button>
+  <button mat-raised-button color="primary" cdkFocusInitial (click)="onClick()">
+    <mat-icon>credit_card</mat-icon>
+    Purchase
+  </button>
+</div>

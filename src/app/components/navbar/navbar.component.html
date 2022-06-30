@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>add_shopping_cart</mat-icon>
+  </button>
+  <span class="app-logo" routerLink="/">Putovanja</span>
+
+  <button mat-button routerLink="/profile">
+    <mat-icon class="nav-icon">person</mat-icon>Profile Page
+  </button>
+
+  <span class="example-spacer"></span>
+  <button *ngIf="!user" mat-raised-button class="mx-2" routerLink="/login">
+    <mat-icon>lock_open</mat-icon> Login
+  </button>
+  <button *ngIf="!user" mat-raised-button color="accent" routerLink="/register">
+    <mat-icon>lock_open</mat-icon> Register
+  </button>
+</mat-toolbar>
